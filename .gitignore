@@ -1,0 +1,21 @@
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+*.tfplan
+
+# Python
+__pycache__/
+*.pyc
+
+# Docker
+*.log
+
+# OS files
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+
