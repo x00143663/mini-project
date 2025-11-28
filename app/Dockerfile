@@ -2,15 +2,15 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-# Copiem codul aplicației
+# Copy application code
 COPY app.py .
 
-# Instalăm dependențele necesare
+# Install dependencies
 RUN pip install --no-cache-dir flask psycopg2-binary
 
-# Aplicația ascultă pe portul 5000
+# App listen on port 5000
 EXPOSE 5000
 
-# Comanda de pornire
+# Starting command
 CMD ["python", "app.py"]
 
