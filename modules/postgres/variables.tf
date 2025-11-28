@@ -1,25 +1,25 @@
 variable "container_name" {
   type        = string
-  description = "Numele containerului PostgreSQL"
+  description = "PostgreSQL container name"
 }
 
 variable "db_name" {
   type        = string
-  description = "Numele bazei de date"
+  description = "Database name"
 }
 
 variable "db_user" {
   type        = string
-  description = "Utilizatorul bazei de date"
+  description = "Database user"
 }
 
 variable "db_password" {
   type        = string
-  description = "Parola pentru baza de date"
+  description = "Database password"
 }
 
 variable "port" {
   type        = number
-  description = "Portul local expus pentru PostgreSQL"
+  description = "Local port exposed for PostgreSQL"
 }
 
