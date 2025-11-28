@@ -1,35 +1,35 @@
 variable "container_name" {
   type        = string
-  description = "Numele containerului Flask"
+  description = "Flask container name"
 }
 
 variable "app_port" {
   type        = number
-  description = "Portul local expus pentru aplicatia Flask"
+  description = "Flask application port"
 }
 
 variable "db_host" {
   type        = string
-  description = "Host-ul PostgreSQL la care se conecteaza aplicatia"
+  description = "The PostgreSQL host to which the app is connecting"
 }
 
 variable "db_port" {
   type        = number
-  description = "Portul PostgreSQL"
+  description = "PostgreSQL port"
 }
 
 variable "db_name" {
   type        = string
-  description = "Numele bazei de date"
+  description = "DB name"
 }
 
 variable "db_user" {
   type        = string
-  description = "Utilizatorul DB"
+  description = "DB user"
 }
 
 variable "db_password" {
   type        = string
-  description = "Parola DB"
+  description = "DB password"
 }
 
