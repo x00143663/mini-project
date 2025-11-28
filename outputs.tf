@@ -1,20 +1,20 @@
 output "db_container_name" {
-  description = "Containerul PostgreSQL creat"
+  description = "PostgreSQL container created"
   value       = module.db.container_name
 }
 
 output "db_address" {
-  description = "Adresa la care e accesibil PostgreSQL"
+  description = "The address where PostgreSQL is accessible"
   value       = "localhost:${module.db.port}"
 }
 
 output "app_container_name" {
-  description = "Containerul Flask creat"
+  description = "Flask container created"
   value       = module.app.container_name
 }
 
 output "app_url" {
-  description = "URL-ul la care este accesibila aplicatia"
+  description = "The URL at which the application is accessible"
   value       = "http://localhost:${module.app.port}"
 }
 
