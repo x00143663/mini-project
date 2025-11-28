@@ -1,42 +1,42 @@
 variable "db_container_name" {
   type        = string
-  description = "Numele containerului PostgreSQL"
+  description = "PostgreSQL container name"
   default     = "mini-postgres"
 }
 
 variable "db_name" {
   type        = string
-  description = "Numele bazei de date"
+  description = "DB name"
   default     = "mydb"
 }
 
 variable "db_user" {
   type        = string
-  description = "Utilizatorul DB"
+  description = "DB user"
   default     = "appuser"
 }
 
 variable "db_password" {
   type        = string
-  description = "Parola utilizatorului DB"
+  description = "DB user password"
   default     = "secret"
 }
 
 variable "db_port" {
   type        = number
-  description = "Portul local pe care expunem PostgreSQL"
+  description = "The local port on which we expose PostgreSQL"
   default     = 5433
 }
 
 variable "app_container_name" {
   type        = string
-  description = "Numele containerului Flask"
+  description = "Flask container name"
   default     = "mini-flask-app"
 }
 
 variable "app_port" {
   type        = number
-  description = "Portul local pe care expunem aplicatia Flask"
+  description = "The local port on which we expose the Flask application"
   default     = 5000
 }
 
