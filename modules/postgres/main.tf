@@ -7,14 +7,14 @@ terraform {
   }
 }
 
-# Modul PostgreSQL - creează imaginea, volumul și containerul
+# PostgreSQL modul- create the imagine, the volume and the container
 
 resource "docker_image" "postgres" {
   name         = "postgres:16"
   keep_locally = false
 }
 
-# Named volume pentru datele DB (persistență)
+# Named volumes for DB data (persistence)
 resource "docker_volume" "pgdata" {
   name = "${var.container_name}-data"
 }
@@ -34,7 +34,7 @@ resource "docker_container" "postgres" {
     external = var.port
   }
 
-  # Montăm volume-ul în /var/lib/postgresql/data
+  # Mount the volume at /var/lib/postgresql/data
   volumes {
     volume_name    = docker_volume.pgdata.name
     container_path = "/var/lib/postgresql/data"
