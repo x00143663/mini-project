@@ -9,7 +9,7 @@ terraform {
 
 provider "docker" {}
 
-# Aici apelăm modulul pentru PostgreSQL
+# Here we call the module for PostgreSQL
 module "db" {
   source = "./modules/postgres"
 
@@ -26,7 +26,7 @@ module "app" {
   container_name = var.app_container_name
   app_port       = var.app_port
 
-  # Legăm app-ul de aceleași valori DB ca modulul postgres
+  # We bind the app to the same DB values ​​as the postgres module
   db_host     = "host.docker.internal"
   db_port     = var.db_port
   db_name     = var.db_name
