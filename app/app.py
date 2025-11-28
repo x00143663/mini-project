@@ -8,9 +8,9 @@ def get_db_connection():
     """
     Returns a connection to PostgreSQL.
 
-    Valorile sunt citite din variabile de mediu:
+    The values are read from medium variables:
     DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD
-    Cu default-uri rezonabile pentru laborator.
+    Defaults values for lab.
     """
     host = os.getenv("DB_HOST", "host.docker.internal")
     port = int(os.getenv("DB_PORT", "5433"))
